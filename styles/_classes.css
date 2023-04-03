@@ -1,0 +1,24 @@
+@layer components {
+  /* section class */
+  .section-title {
+    @apply text-[24px] font-extrabold text-gray-900;
+  }
+  .section-text {
+    @apply font-normal text-gray-600;
+  }
+
+  /* container class */
+  .container {
+    @apply mx-auto w-[calc(100%-3rem)] max-w-7xl;
+  }
+
+  /* btn class */
+  .btn {
+    @apply flex h-[56px] items-center justify-center rounded-lg bg-purple-600 px-8 py-4 font-bold text-white;
+  }
+
+  /* main class */
+  .main {
+    @apply mx-auto min-h-screen max-w-[1440px] overflow-hidden bg-gray-100;
+  }
+}
