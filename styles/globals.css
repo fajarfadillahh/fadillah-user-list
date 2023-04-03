@@ -1,6 +1,7 @@
 /* tailwind directives */
 @import url("./_fonts.css");
 @import url("./_classes.css");
+@import url("./_main.css");
 
 /* tailwind directives */
 @tailwind base;

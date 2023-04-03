@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 mx-auto max-w-[1440px] bg-white shadow-md">
       <div className="container flex h-24 items-center justify-between">
@@ -22,7 +24,9 @@ export default function Header() {
               <li key={text}>
                 <Link
                   href={link}
-                  className="header-link font-semibold text-gray-900 hover:text-pink-500"
+                  className={`header-link font-semibold text-gray-900 hover:text-pink-500 ${
+                    router.pathname === link ? "active" : null
+                  }`}
                 >
                   {text}
                 </Link>
