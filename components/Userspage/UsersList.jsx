@@ -1,4 +1,5 @@
 // import components
+import Link from "next/link";
 import UsersCard from "./UsersCard";
 
 export default function UsersList({ dataUsers }) {
@@ -9,7 +10,11 @@ export default function UsersList({ dataUsers }) {
 
         <div className="grid justify-center gap-4">
           {dataUsers.map((user) => {
-            return <UsersCard key={user.id} user={user} />;
+            return (
+              <Link href={`/user/${user.id}`} key={user.id}>
+                <UsersCard user={user} />
+              </Link>
+            );
           })}
         </div>
       </div>
