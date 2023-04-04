@@ -25,7 +25,10 @@ export default function Header() {
                 <Link
                   href={link}
                   className={`header-link font-semibold text-gray-900 hover:text-pink-500 ${
-                    router.pathname === link ? "active" : null
+                    router.pathname === link ||
+                    (router.pathname.startsWith("/user") && link === "/users")
+                      ? "active"
+                      : null
                   }`}
                 >
                   {text}
