@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RiArrowLeftLine } from "react-icons/ri";
 
-export default function Hero() {
+export default function Hero({ user }) {
   return (
     <section className="pb-16 pt-32">
       <div className="container flex items-center">
@@ -14,18 +14,23 @@ export default function Hero() {
             <p className="font-semibold">Back to list</p>
           </Link>
 
-          <div>
-            <h1 className="section-title pb-4 text-center text-[48px]">
-              Details User
-            </h1>
+          <div className="grid gap-6">
+            <div className="text-center">
+              <h1 className="section-title text-[48px]">
+                Details User {user.id}
+              </h1>
+              <p className="text-[18px] font-bold text-gray-900">
+                Hi, {user.name} 👋
+              </p>
+            </div>
 
             <ul className="flex flex-col gap-2">
               {[
-                ["Name:", "Name"],
-                ["Username:", "Username"],
-                ["Email:", "Email"],
-                ["Phone:", "Phone"],
-                ["Website:", "Website"],
+                ["😎 Name:", `${user.name}`],
+                ["✌ Username:", `${user.username}`],
+                ["📧 Email:", `${user.email}`],
+                ["📞 Phone:", `${user.email}`],
+                ["🌏 Website:", `${user.website}`],
               ].map(([text, value]) => {
                 return (
                   <li
