@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <Link href="/" className="btn inline-flex">
+        <Link href="/users" className="btn inline-flex">
           See all users
         </Link>
       </div>
