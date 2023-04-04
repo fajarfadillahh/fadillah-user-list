@@ -1,10 +1,11 @@
 // import components
 import Layout from "@/components/Layout";
+import UsersList from "@/components/Userspage/UsersList";
 
 export default function users() {
   return (
     <Layout>
-      <div className="pt-40">Users page</div>
+      <UsersList />
     </Layout>
   );
 }
