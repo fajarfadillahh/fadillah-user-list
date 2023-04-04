@@ -1,3 +1,10 @@
+// import components
+import Hero from "@/components/Detailpage/Hero";
+
 export default function Detail() {
-  return <div className="pt-40">Detail page</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
