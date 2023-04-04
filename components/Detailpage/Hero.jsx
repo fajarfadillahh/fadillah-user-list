@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="mx-auto grid w-[768px] gap-8">
           <Link
             href="/users"
-            className="inline-flex items-center gap-1 text-gray-900 hover:text-pink-500"
+            className="inline-flex w-max items-center gap-1 text-gray-900 hover:text-pink-500"
           >
             <RiArrowLeftLine className="text-[1.3rem]" />
             <p className="font-semibold">Back to list</p>
