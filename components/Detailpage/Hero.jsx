@@ -8,7 +8,7 @@ export default function Hero({ user }) {
         <div className="mx-auto grid w-[768px] gap-8">
           <Link
             href="/users"
-            className="inline-flex w-max items-center gap-1 text-gray-900 hover:text-pink-500"
+            className="inline-flex w-max items-center gap-1 text-gray-900 hover:text-pink-500 dark:text-white dark:hover:text-pink-500"
           >
             <RiArrowLeftLine className="text-[1.3rem]" />
             <p className="font-semibold">Back to list</p>
@@ -19,7 +19,7 @@ export default function Hero({ user }) {
               <h1 className="section-title text-[48px]">
                 Details User {user.id}
               </h1>
-              <p className="text-[18px] font-bold text-gray-900">
+              <p className="text-[18px] font-bold text-gray-900 dark:text-white">
                 Hi, {user.name} 👋
               </p>
             </div>
@@ -35,7 +35,7 @@ export default function Hero({ user }) {
                 return (
                   <li
                     key={text}
-                    className="inline-flex items-center gap-1 text-gray-900"
+                    className="inline-flex items-center gap-1 text-gray-900 dark:text-white"
                   >
                     <p className="font-semibold">{text}</p>
                     <p className="font-extrabold">{value}</p>
