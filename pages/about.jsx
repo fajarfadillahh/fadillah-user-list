@@ -1,3 +1,10 @@
+// import components
+import Hero from "@/components/Aboutpage/Hero";
+
 export default function about() {
-  return <div className="pt-40">about page</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
