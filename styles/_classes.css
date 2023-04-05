@@ -1,10 +1,10 @@
 @layer components {
   /* section class */
   .section-title {
-    @apply text-[24px] font-extrabold text-gray-900;
+    @apply text-[24px] font-extrabold text-gray-900 dark:text-white;
   }
   .section-text {
-    @apply font-normal text-gray-600;
+    @apply font-normal text-gray-600 dark:text-white;
   }
 
   /* container class */
@@ -19,6 +19,6 @@
 
   /* main class */
   .main {
-    @apply mx-auto min-h-screen max-w-[1440px] overflow-hidden bg-white;
+    @apply mx-auto min-h-screen max-w-[1440px] overflow-hidden bg-white dark:bg-gray-900;
   }
 }
