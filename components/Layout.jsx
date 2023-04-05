@@ -3,6 +3,7 @@ import { useEffect } from "react";
 // import components
 import Head from "next/head";
 import Header from "./Header";
+import Darkmode from "./Darkmode";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
@@ -17,6 +18,7 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main className="main">{children}</main>
+      <Darkmode />
       <Footer />
     </>
   );
